@@ -14,23 +14,30 @@
     grid-template-areas:
         "item1 item2"
         "item1 item3"
-        "item4 item4"
+        "item4 item5"
         "footer footer";
     grid-gap: 40px;
+    justify-items: center;
 }
 
 .item1 {
     grid-area: item1;
-    padding: 200px;
+    padding: 100px;
     background-color: rgb(5, 58, 58);
     border: 3px solid red;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    /* border-bottom-right-radius: 25%; */
 }
 
 .item2 {
     grid-area: item2;
     background-color: rgb(5, 58, 58);
     background-image: url("https://placekitten.com/g/800/600");
-    border-radius: 100%;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
     border: 3px solid red;
 }
 
@@ -38,18 +45,105 @@
     grid-area: item3;
     background-color: rgb(5, 58, 58);
     background-image: url("https://placekitten.com/g/900/700");
-    border-radius: 100%;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
     border: 3px solid red;
 }
 .item4 {
     grid-area: item4;
-    padding: 100px;
+    background-color: rgb(5, 58, 58);
+    background-image: url("https://placekitten.com/g/900/700");
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    border: 3px solid red;
+}
+.item5 {
+    grid-area: item5;
+    padding: 200px;
+    width: 600px;
     background-color: rgb(5, 58, 58);
     border: 3px solid red;
+    /* border-top-left-radius: 25%; */
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 10%;
+    
 }
 
 footer {
     grid-area: footer;
     padding: 100px;
-    border: 3px solid red;
+    justify-self: right;
+
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        color: lightpink;
+        font-family: FrederickatheGreat-Regular;
+        max-width:vw;
+        background-color: rgb(0, 0, 0);
+        margin: 0 ;
+        padding: 20px 20px;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas:
+            "item1"
+            "item1" 
+            "item2"
+            "item3"
+            "item4"
+            "item5"
+            "footer";
+        grid-gap: 20px;
+        justify-items: center;
+    }
+    .item1 {
+        grid-area: item1;
+        padding: 100px;
+        background-color: rgb(5, 58, 58);
+        border: 3px solid red;
+    }
+    
+    .item2 {
+        grid-area: item2;
+        background-color: rgb(5, 58, 58);
+        background-image: url("https://placekitten.com/g/800/600");
+        border-radius: 50%;
+        height: 400px;
+        width: 400px;
+        border: 3px solid red;
+    }
+    
+    .item3 {
+        grid-area: item3;
+        background-color: rgb(5, 58, 58);
+        background-image: url("https://placekitten.com/g/900/700");
+        border-radius: 50%;
+        height: 400px;
+        width: 400px;
+        border: 3px solid red;
+    }
+    .item4 {
+        grid-area: item4;
+        background-color: rgb(5, 58, 58);
+        background-image: url("https://placekitten.com/g/800/600");
+        border-radius: 50%;
+        height: 400px;
+        width: 400px;
+        border: 3px solid red;
+    }
+    .item5 {
+        grid-area: item5;
+        padding: 100px;
+        background-color: rgb(5, 58, 58);
+        border: 3px solid red;
+    }
+    footer {
+        grid-area: footer;
+        padding: 50px;
+    
+    }
 }
