@@ -78,6 +78,7 @@ h4 > p{
   
 .nav-right {
     float: right;
+    text-decoration: none;
 }
 
 
@@ -104,12 +105,6 @@ footer, footer > a {
         left: 0;
         transform: none;
     }
-}
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
 }
 
 /* Hero section */
