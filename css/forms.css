@@ -1,0 +1,33 @@
+
+textarea {
+    resize: none;
+    height: 110px;
+    width: 300px;
+    background-color: gray;
+}
+
+::placeholder { 
+    color: pink;
+    opacity: 1; 
+  }
+
+input[type=text] {
+    width: 300px;
+    background-color: gray;
+}
+input[type=submit]{
+    width: 70px;
+    height: 27px;
+    margin: 0;
+    background-color: lightpink;
+    color: black;
+    font-weight: bold;
+}
+input[type=submit]:hover{
+    width: 70px;
+    height: 27px;
+    margin: 0;
+    background-color: hotpink;
+    color: black;
+    font-weight: bold;
+}
