@@ -1,40 +1,62 @@
+body {
+
+    background-color: rgb(0, 0, 0);
+    
+}
+
 h1, h3 {
     color: lightpink;
     font-family: FrederickatheGreat-Regular;
+    
 }
 
+h4 {
+    font-size: 40px;
+    font-family: FrederickatheGreat-Regular;
+    margin-top: 25px;
+    
+
+}
+
+h4 > p{
+    font-size: 25px;
+    font-family: FrederickatheGreat-Regular;
+    margin-top: 25px;
+    text-align: left;
+    margin-right: 100px;
+}
 @font-face {
     font-family: FrederickatheGreat-Regular;
-    src: url(fonts/FrederickatheGreat-Regular.ttf);
-}
-
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    src: url(../fonts/FrederickatheGreat-Regular.ttf);
 }
 
 .nav {
     position: relative;
-    padding: 20px;
+    padding: 50px;
     overflow: hidden;
-    background-color: lavender;
+    background-color: rgb(5, 58, 58);
+    border-bottom: 5px solid rgb(218, 16, 16);
+    border-top: 5px solid rgb(218, 16, 16);
+
+
   }
   
 .nav a {
     float: left;
-    color: #000000;
+    color: lightpink;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 27px;
     font-weight: bold;
     font-family: FrederickatheGreat-Regular;
-    opacity: 100;
 }
   
 .nav a:hover {
-    background-color: rgb(226, 131, 131);
-    color: black;
+    color: rgb(255, 255, 255);
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
 }
   
 .nav a.active {
@@ -45,7 +67,7 @@ body {
 .nav-centered a {
     float: none;
     position: absolute;
-    top: 50%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -53,7 +75,13 @@ body {
 .nav-right {
     float: right;
 }
-  
+
+.box {
+    border: 5px solid rgb(80, 70, 70);
+    background-color: gray;
+    margin-left: 75px;
+    margin-right: 50%;
+}
 /* Responsive navigation menu (for mobile devices) */
 @media screen and (max-width: 600px) {
     .nav a, .nav-right {
@@ -78,13 +106,17 @@ body {
 /* Hero section */
 
 .hero-section {
-    background-image: url(../portfolio/images/fire.jpg);
+    background-image: url(../images/fire.jpg);
     padding: 100px;
-    height: 600px;
+    height: 300px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom-right-radius: 100% 55%;
+  	border-bottom-left-radius: 100% 55%;
+
+    border-bottom: 5px solid rgb(218, 16, 16);
 }
 
 
